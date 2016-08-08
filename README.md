@@ -1,3 +1,8 @@
+#Jar Responsive Grid
+<p>
+Jar is a super simple resposnive grid that handles the brakepoints of your layout while you focus on developing.
+
+</p>
 
 #Get Jar
 
