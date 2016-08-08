@@ -1,0 +1,157 @@
+/*
+  Jar Grid system is a responsive grid created
+  and developed by Karen Acosta
+  https://github.com/kaprilam
+* Jar V1.0.5
+* Copyright 2016, Karen Acosta
+*http://kaprilam.github.io/Jar//
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 06/15/2016
+*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+//row
+@mixin row () {
+  font-size: 0;
+}
+
+// column mixins.
+@mixin col ($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    padding-left: if($first, 0, $gap);
+    padding-right: if($last, 0, $gap);
+
+    @media only screen and (min-width: 768px) {
+            width: percentage($col/$sum);
+            vertical-align: $align;
+    }
+
+    &.steady {
+      width: percentage($col/$sum);
+     }
+}
+
+.one, .two, .three, .four,
+.five, .six, .seven, .eight,
+.nine, .ten, .eleven, .twelve{
+  @include row;
+}
+
+.off-set-one, .off-set-two, .off-set-three, .off-set-four,
+.off-set-five, .off-set-six, .off-set-seven, .off-set-eight,
+.off-set-nine, .off-set-ten, .off-set-eleven, .off-set-twelve{
+  @include row;
+}
+
+
+.row {
+
+.one {
+  @include col(10, 120);
+}
+
+.two {
+  @include col(20, 120);
+}
+
+.three {
+  @include col(30, 120);
+}
+
+.four {
+  @include col(40, 120);
+}
+
+.five {
+  @include col(50, 120);
+}
+
+.six {
+  @include col(60, 120);
+}
+
+.seven {
+  @include col(70, 120);
+}
+
+.eight {
+  @include col(80, 120);
+}
+
+.nine {
+  @include col(90, 120);
+}
+
+.ten {
+  @include col(100, 120);
+}
+
+.eleven {
+  @include col(110, 120);
+}
+
+.twelve {
+  @include col(120, 120);
+}
+}
+
+//offset
+.row{
+
+  .off-set-one {
+    @include col(10, 120);
+  }
+
+  .off-set-two {
+    @include col(20, 120);
+  }
+
+  .off-set-three {
+    @include col(30, 120);
+  }
+
+  .off-set-four {
+    @include col(40, 120);
+  }
+
+  .off-set-five {
+    @include col(50, 120);
+  }
+
+  .off-set-six {
+    @include col(60, 120);
+  }
+
+  .off-set-seven {
+    @include col(70, 120);
+  }
+
+  .off-set-eight {
+    @include col(80, 120);
+  }
+
+  .off-set-nine {
+    @include col(90, 120);
+  }
+
+  .off-set-ten {
+    @include col(100, 120);
+  }
+
+  .off-set-eleven {
+    @include col(110, 120);
+  }
+
+  .off-set-twelve {
+    @include col(120, 120);
+  }
+}
