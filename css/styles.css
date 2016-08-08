@@ -1,0 +1,89 @@
+body{
+  font-family: Raleway;
+}
+h2, h3, h4, h5, h6{
+  color: #3e4551;
+}
+p{
+  color: grey;
+}
+#header{
+  margin-top: 6em;
+}
+h1{
+  text-align: center;
+  color: #3e1455;
+}
+
+#header img{
+  width: 300px;
+}
+#columns span{
+  background-color: #ccc;
+  color: #f5eeee;
+  font-weight: bold;
+  padding: 2px 2px;
+  border: 1px solid #fff;
+}
+
+#columns {
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+#columns h2{
+  margin-bottom: 2em;
+  text-align: center;
+}
+#columns p{
+  text-align: center;
+}
+ul,li{
+  color: grey;
+}
+#utilities h2{
+  text-align: center;
+  margin-bottom: 2em;
+}
+#utilities li{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#getjar{
+  padding-bottom: 4em;
+  padding-top: 2em;
+}
+#getjar div{
+  text-align: center;
+  /*background-color: red;*/
+}
+#getjar h2{
+  padding-bottom: 2em;
+  text-align: center;
+}
+#getjar a{
+  border: 1px solid #3e4551;
+  color: #3e4551;
+  text-decoration: none;
+  padding: 10px 25px;
+
+}
+#getjar p{
+  text-align: center;
+  margin-bottom: 3em;
+}
+#getjar > div{
+  margin-bottom: 2em;
+}
+
+
+#footer{
+  background-color: #3e4551;
+  text-align: center;
+  padding: 3em 0;
+}
+#footer p,a{
+  color: #f5eeee;
+}
+#footer span{
+  color: #f55;
+}
