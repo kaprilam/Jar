@@ -1,92 +1,154 @@
-body{
+body {
   font-family: Raleway;
 }
-h2, h3, h4, h5, h6{
-  color: #3e4551;
-}
-p{
-  color: grey;
-}
-#header{
-  margin-top: 6em;
-}
-h1{
+
+h1, h2, h3, h4, h5 {
+  color: #0082D0;
   text-align: center;
-  color: #3e1455;
+  font-size: 2em;
 }
 
-#header img{
-  width: 300px;
+h6 {
+  color: #FFBB00;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0;
 }
-#columns span{
-  background-color: #3e4551;
-  color: #f5eeee;
+
+h6::before {
+  height: 10px;
+  width: 50px;
+  border: 2.5px solid #0082D0;
+  content: "";
+}
+
+#main-tit {
+  margin-top: 4em;
+}
+
+.main-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12em;
+  margin-top: 2em;
+}
+
+p {
+  color: grey;
+}
+
+#header {
+  margin-top: 12em;
+  position: relative;
+}
+
+#intro {
+  padding-top: 4em;
+  height: 80vh;
+  border-bottom: 2px solid #FFBB00;
+}
+
+#getJar {
+  text-align: center;
+  padding-top: 4em;
+}
+#getJar a {
+  color: #0082D0;
+  text-align: center;
+  border: 1px solid #FFBB00;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+#getJar a:hover {
+  transition: all .5s ease;
+  color: #fff;
+  text-align: center;
+  background-color: #0082D0;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+#columns span {
+  background-color: #0082D0;
+  color: #fff;
   font-weight: bold;
   padding: 2px 2px;
   border: 1px solid #fff;
 }
-#columns p{
+
+#columns p {
   margin-bottom: 3em;
 }
 
 #columns {
-  padding-top: 3em;
+  padding-top: 4em;
   padding-bottom: 4em;
+  border-bottom: 2px solid #FFBB00;
 }
-#columns h2{
+
+#columns h2 {
   margin-bottom: 2em;
   text-align: center;
 }
-#columns p{
+
+#columns p {
   text-align: center;
 }
-ul,li{
-  color: grey;
+
+#utilities {
+  height: auto;
+  margin-bottom: 4em;
+  margin-top: 4em;
 }
-#utilities h2{
+#utilities p {
+  margin-bottom: 4em;
   text-align: center;
+}
+#utilities h2 {
   margin-bottom: 2em;
 }
-#utilities li{
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-#getjar{
-  padding-bottom: 4em;
+#utilities div {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  height: 210px;
+  text-align: center;
   padding-top: 2em;
+  background-color: #FFBB00;
+  border: 1px solid #fff;
 }
-#getjar div{
+#utilities div img {
+  width: 100px;
+  top: 50%;
+  left: 40%;
+  margin: 0 auto;
+}
+#utilities div h5 {
+  color: #fff;
+  font-size: 1em;
+  position: absolute;
   text-align: center;
-  /*background-color: red;*/
+  display: block;
 }
-#getjar h2{
-  padding-bottom: 2em;
+#utilities div:hover {
+  transition: all .5s ease;
+  background-color: #0082D0;
+}
+#utilities div > h5 {
   text-align: center;
 }
-#getjar a{
-  border: 1px solid #3e4551;
-  color: #3e4551;
-  text-decoration: none;
-  padding: 10px 25px;
 
-}
-#getjar p{
+#footer {
+  background-color: #0082D0;
   text-align: center;
-  margin-bottom: 6em;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
-#getjar > div{
-  margin-bottom: 2em;
+#footer p, #footer a {
+  color: #fff;
 }
 
-
-#footer{
-  background-color: #3e4551;
-  text-align: center;
-  padding: 3em 0;
-}
-#footer p,a{
-  color: #f5eeee;
-}
-#footer span{
-  color: #f55;
-}
+/*# sourceMappingURL=styles.css.map */

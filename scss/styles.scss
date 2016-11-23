@@ -1,0 +1,153 @@
+$primary: #0082D0;
+$secondary:#FFBB00;
+$fill: #fff;
+$heads: "h1,h2,h3,h4,h5";
+
+@mixin title ($primary, $align, $size){
+  color: $primary;
+  text-align: $align;
+  font-size: $size;
+}
+body{
+  font-family: Raleway;
+}
+#{$heads}{
+  @include title($primary, center, 2em) ;
+}
+h6{
+  color: $secondary;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0;
+}
+h6::before{
+  height: 10px;
+  width: 50px;
+  border: 2.5px solid $primary;
+  content: "";
+}
+#main-tit{
+  margin-top: 4em;
+}
+.main-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 12em;
+  margin-top: 2em;
+}
+p{
+  color: grey;
+}
+#header{
+  margin-top: 12em;
+  position: relative;
+}
+
+#intro{
+  padding-top: 4em;
+  height: 80vh;
+  border-bottom: 2px solid $secondary;
+}
+#getJar{
+  text-align: center;
+  padding-top: 4em;
+  a{
+    color: $primary;
+    text-align: center;
+    border: 1px solid $secondary;
+    text-decoration: none;
+    padding: 1em 2em;
+
+  }
+  a:hover{
+    transition: all .5s ease;
+    color: $fill;
+    text-align: center;
+    background-color: $primary;
+    border: 1px solid $fill;
+    text-decoration: none;
+    padding: 1em 2em;
+
+  }
+}
+
+
+#columns span{
+  background-color: $primary;
+  color: $fill;
+  font-weight: bold;
+  padding: 2px 2px;
+  border: 1px solid $fill;
+}
+#columns p{
+  margin-bottom: 3em;
+}
+
+#columns {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  border-bottom: 2px solid $secondary;
+}
+#columns h2{
+  margin-bottom: 2em;
+  text-align: center;
+}
+#columns p{
+  text-align: center;
+}
+#utilities {
+  height: auto;
+  margin-bottom: 4em;
+  margin-top: 4em;
+  p{
+    margin-bottom: 4em;
+    text-align: center;
+  }
+  h2{
+    margin-bottom: 2em;
+  }
+  div{
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    height: 210px;
+    text-align: center;
+    padding-top: 2em;
+
+    img{
+    width: 100px;
+    top: 50%;
+    left: 40%;
+    margin: 0 auto;
+    }
+  background-color: $secondary;
+  border: 1px solid $fill;
+    h5{
+      color: $fill;
+      font-size: 1em;
+      position: absolute;
+      text-align: center;
+      display: block;
+      }
+    }
+    div:hover{
+      transition: all .5s ease;
+      background-color: $primary;
+    }
+    div > h5{
+      text-align: center;
+    }
+
+}
+
+#footer{
+  background-color: $primary;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  p,a{
+    color: $fill;
+  }
+}
