@@ -59,7 +59,7 @@ p {
   text-align: center;
   border: 1px solid #FFBB00;
   text-decoration: none;
-  padding: 1em 1em;
+  padding: 1em 2em;
 }
 #getJar a:hover {
   transition: all .5s ease;
