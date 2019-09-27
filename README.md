@@ -1,22 +1,12 @@
 #Jar Responsive Grid
 <p>
-Jar is a super simple resposnive grid that handles the brakepoints of your layout while you focus on developing.
-
-</p>
-
-#Get Jar
-
-<p>
-
-  *Get up and running by downloading Jar http://kaprilam.github.io/Jar//<br>
-  *Get up and running by cloning the repo,(for stable releases download from site or clone from stable branch since the project is in constant development).
-</p>
+Responsive grid snippet.
 
 #Jar Quick-Start
 
 
 <p>
-  Jar is very semantic, to make use of the rows and grid you just have to add the class .*row* to a container (either *article* or *div* for better results) and then nest your columns using the size you'd like it to be. </p><br>
+  To make use of the rows and grid you just have to add the class .*row* to a container (either *article* or *div* for better results) and then nest your columns using the size you'd like it to be. </p><br>
  ````Html
     <article class="row">
       <div class="six">
@@ -79,6 +69,6 @@ Jar is a super simple resposnive grid that handles the brakepoints of your layou
       </article>
     </div>
     ````
-  <h3>For more information on how to use Jar</h3>
-    [Checkout Jar Grid here](http://kaprilam.github.io/jar//)
+  <!--<h3>For more information on how to use Jar</h3>
+    [Checkout Jar Grid here](http://kaprilam.github.io/jar//)-->
     
